@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.socialnetworkgui.controller.EditUserController">
+
+    <stylesheets>
+        <URL value="@../../controller/css/styles.css" />
+    </stylesheets>
+    <children>
+        <TextField fx:id="textFieldLastName" layoutX="183.0" layoutY="108.0" prefHeight="43.0" prefWidth="258.0" styleClass="text-field" />
+        <TextField fx:id="textFieldFirstName" layoutX="183.0" layoutY="163.0" prefHeight="43.0" prefWidth="258.0" styleClass="text-field" />
+        <Label layoutX="110.0" layoutY="122.0" styleClass="label" text="Nume" />
+        <Label layoutX="93.0" layoutY="175.0" prefHeight="18.0" prefWidth="75.0" styleClass="label" text="Prenume" />
+        <Button layoutX="510.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleClearButton" prefHeight="36.0" prefWidth="75.0" styleClass="button" text="Clear" />
+        <Button layoutX="20.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleCancelButton" prefHeight="36.0" prefWidth="81.0" styleClass="button" text="Cancel" />
+      <Button layoutX="272.0" layoutY="251.0" mnemonicParsing="false" onAction="#handleUpdateProfile" styleClass="button" text="Update" />
+    </children>
+
+
+</AnchorPane>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="543.0" prefWidth="877.0" stylesheets="@../../views/css/styles.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.socialnetworkgui.controller.ChatController">
+   <stylesheets>
+      <URL value="@../../views/css/styles.css" />
+   </stylesheets>
+   <children>
+      <VBox fx:id="chatContainer" layoutX="138.0" layoutY="35.0" prefHeight="335.0" prefWidth="386.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="543.0" prefWidth="877.0" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.socialnetworkgui.controller.EditFriendshipController">
+    <stylesheets>
+        <URL value="@../css/styles.css" />
+    </stylesheets>
+    <children>
+      <TableView fx:id="tableView" layoutX="14.0" layoutY="32.0" prefHeight="156.0" prefWidth="501.0" styleClass="table-view">
+        <columns>
+          <TableColumn fx:id="friendIdColumn" prefWidth="58.00000286102295" text="ID" />
+          <TableColumn fx:id="firstNameColumn" prefWidth="106.60001373291016" text="First Name" />
+            <TableColumn fx:id="lastNameColumn" minWidth="0.0" prefWidth="111.79998779296875" text="Last Name" />
+            <TableColumn fx:id="friendsFromColumn" prefWidth="191.80001831054688" text="Friends From" />
+        </columns>
+      </TableView>
+       <TextField fx:id="idTextField" layoutX="643.0" layoutY="24.0" styleClass="text-field" />
+      <TextField fx:id="firstNameTextField" layoutX="643.0" layoutY="69.0" styleClass="text-field" />
+      <TextField fx:id="lastNameTextField" layoutX="643.0" layoutY="115.0" styleClass="text-field" />
+      <Button layoutX="600.0" layoutY="435.0" mnemonicParsing="false" onAction="#handleDeleteFriendship" prefHeight="36.0" prefWidth="162.0" styleClass="button" text="Delete friendship" />
+      <Label layoutX="546.0" layoutY="80.0" styleClass="label" text="First name:" />
+      <Label layoutX="546.0" layoutY="126.0" styleClass="label" text="Last name:" />
+      <Label layoutX="573.0" layoutY="35.0" styleClass="label" text="ID:" />
+      <Button layoutX="600.0" layoutY="319.0" mnemonicParsing="false" onAction="#handleFilterFriendships" prefHeight="36.0" prefWidth="162.0" styleClass="button, button-centered-text" text="Filter friendships" />
+      <Label layoutX="561.0" layoutY="174.0" styleClass="label" text="Month:" />
+      <TextField fx:id="monthTextField" layoutX="643.0" layoutY="163.0" styleClass="text-field" />
+      <Button fx:id="reloadButton" layoutX="600.0" layoutY="372.0" mnemonicParsing="false" onAction="#handleReload" prefHeight="36.0" prefWidth="162.0" styleClass="button, button-centered-text" text="Reload friendships" />
+      <Button layoutX="233.0" layoutY="435.0" mnemonicParsing="false" onAction="#handleChatsButton" prefHeight="36.0" prefWidth="162.0" styleClass="button, button-centered-text" text="View chats" />
+      <Button layoutX="616.0" layoutY="272.0" mnemonicParsing="false" onAction="#handleSendMessage" prefHeight="36.0" prefWidth="131.0" styleClass="button, button-centered-text" text="Send message" />
+      <Label layoutX="558.0" layoutY="219.0" prefHeight="18.0" prefWidth="70.0" styleClass="label" text="Message:" />
+      <TextField fx:id="messageTextField" layoutX="643.0" layoutY="210.0" styleClass="text-field" />
+      <TableView fx:id="tableViewFriendRequests" layoutX="14.0" layoutY="248.0" prefHeight="178.0" prefWidth="502.0" styleClass="text-field">
+        <columns>
+          <TableColumn fx:id="friendIdColumnFriendRequest" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="friendFirstNameColumnFriendRequest" prefWidth="122.20001220703125" text="First Name" />
+            <TableColumn fx:id="friendLastNameColumnFriendRequest" prefWidth="116.19999694824219" text="Last Name" />
+            <TableColumn fx:id="friendStatusColumnFriendRequest" prefWidth="139.20001220703125" text="Status" />
+        </columns>
+      </TableView>
+      <Button layoutX="36.0" layoutY="435.0" mnemonicParsing="false" onAction="#handleRejectFriendRequest" prefHeight="36.0" prefWidth="78.0" styleClass="button, button-centered-text" text="Reject" />
+      <Button layoutX="131.0" layoutY="435.0" mnemonicParsing="false" onAction="#handleAcceptFriendRequest" prefHeight="36.0" prefWidth="78.0" styleClass="button, button-centered-text" text="Accept" />
+      <Button layoutX="161.0" layoutY="201.0" mnemonicParsing="false" onAction="#handleSendFriendRequest" prefHeight="36.0" prefWidth="169.0" styleClass="button, button-centered-text" text="Send friend request" />
+      <Label layoutX="36.0" layoutY="6.0" prefHeight="16.0" prefWidth="78.0" text="Friends" />
+      <Label layoutX="26.0" layoutY="229.0" text="Requests" />
+      
+   </children>
+</AnchorPane>

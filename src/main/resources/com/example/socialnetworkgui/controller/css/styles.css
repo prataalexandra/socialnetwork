@@ -1,0 +1,137 @@
+.vbox {
+    -fx-background-color: linear-gradient(to bottom, #F3D9E7, #F9B7DD);
+}
+
+.button {
+    -fx-background-color: #FFB6C1;
+    -fx-background-radius: 20;
+    -fx-padding: 8 16;
+    -fx-content-display: left;
+    -fx-alignment: baseline-left;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.button-centered-text {
+    -fx-alignment: center;
+}
+
+.button:hover {
+    -fx-background-color: #FF69B4;
+}
+
+.table-view {
+    -fx-control-inner-background: #FCC2D8;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: linear-gradient(to right, #FFD1DC, #FFAAB7);
+}
+
+.table-view .column-header,
+.table-view .filler,
+.table-view .column-header-background {
+    -fx-background-insets: 0, 0 0 1 0, 0 0 1 0;
+    -fx-padding: 0.166667em 0.416667em 0.25em 0.416667em;
+}
+
+.table-view .column-header,
+.table-view .filler,
+.table-view .column-header-background,
+.table-view .column {
+    -fx-background-color: linear-gradient(to right, #FFB6C1, #FFD1DC);
+    -fx-border-width: 0 0 1 0;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #FFC0CB;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #FF1493;
+    -fx-text-fill: black;
+}
+
+.table-cell {
+    -fx-alignment: CENTER;
+}
+
+.table-row-cell {
+    -fx-font-family: "Times New Roman";
+    -fx-font-size: 14px;
+    -fx-background-color: linear-gradient(to right, rgba(255, 182, 193, 0.5), rgba(255, 192, 203, 0.4));
+    -fx-border-color: white;
+    -fx-border-width: 1 1 0 1;
+}
+
+.text-field {
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-font-size: 15;
+    -fx-background-color: #FFC0CB;
+    -fx-padding: 8 10 8 10;
+    -fx-alignment: center;
+    -fx-highlight-fill: #FF69B4;
+    -fx-highlight-text-fill: white;
+    -fx-text-fill: #800080;
+    -fx-prompt-text-fill: #800080;
+}
+
+.label {
+    -fx-font-family: "Arial", sans-serif;
+    -fx-font-size: 14;
+    -fx-text-fill: linear-gradient(to bottom, #FF5F9F, #FFB6C1);
+}
+
+.text-area {
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-background-color: #FFC0CB;
+    -fx-padding: 8 10 8 10;
+}
+
+.anchor-pane {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #F3D9E7, #F9B7DD);
+}
+
+/* Set the text color */
+.text-area .text {
+    -fx-fill: #333333;
+}
+
+/* Add a border */
+.text-area {
+    -fx-border-color: #FFB6C1;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+}
+
+/* Change the font style */
+.text-area {
+    -fx-font-family: "Arial";
+    -fx-font-size: 14px;
+}
+
+/* Add some padding */
+.text-area {
+    -fx-padding: 5px;
+}
+
+/* Set a different caret color */
+.text-area .caret {
+    -fx-caret-color: #ff6600;
+}
+
+/* Customize the scrollbar */
+.text-area .scroll-pane .scroll-bar:vertical {
+    -fx-background-color: #FFC0CB;
+    -fx-background-insets: 0, 0, 1;
+    -fx-padding: 0.25em;
+}
+
+.text-area .scroll-pane .scroll-bar:horizontal {
+    -fx-background-color: #FFC0CB;
+    -fx-background-insets: 0, 0, 1;
+    -fx-padding: 0.25em;
+}

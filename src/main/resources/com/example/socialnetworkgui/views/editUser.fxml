@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="anchor-pane" stylesheets="@../controller/css/styles.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.socialnetworkgui.AuthController">
+   <stylesheets>
+      <URL value="@../controller/css/styles.css" />
+   </stylesheets>
+   <children>
+      <TextField fx:id="textFieldLastName" layoutX="203.0" layoutY="36.0" prefHeight="43.0" prefWidth="258.0" styleClass="text-field" />
+      <TextField fx:id="textFieldFirstName" layoutX="203.0" layoutY="92.0" prefHeight="43.0" prefWidth="258.0" styleClass="text-field" />
+      <Label fx:id="lastNameLabel" layoutX="145.0" layoutY="30.0" prefHeight="28.0" prefWidth="51.0" styleClass="label" text="Nume" />
+      <Label fx:id="firstNameLabel" layoutX="128.0" layoutY="96.0" prefHeight="18.0" prefWidth="61.0" styleClass="label" text="Prenume" />
+      <Button fx:id="authButton" layoutX="21.0" layoutY="350.0" mnemonicParsing="false" onAction="#handleLogIn" prefHeight="36.0" prefWidth="96.0" styleClass="button" text="Log In" />
+      <Button layoutX="126.0" layoutY="350.0" mnemonicParsing="false" onAction="#handleClearButton" prefHeight="36.0" prefWidth="87.0" styleClass="button" text="Clear" />
+      <TextField fx:id="textFieldEmail" layoutX="203.0" layoutY="142.0" prefHeight="43.0" prefWidth="258.0" styleClass="text-field" />
+      <PasswordField fx:id="passwordField" layoutX="203.0" layoutY="200.0" prefHeight="43.0" prefWidth="258.0" styleClass="text-field" />
+      <Label layoutX="150.0" layoutY="156.0" prefHeight="16.0" prefWidth="41.0" styleClass="label" text="Email" />
+      <Label fx:id="passwordLabel" layoutX="149.0" layoutY="214.0" styleClass="label" text="Parola" />
+      <Label fx:id="authLabel" layoutX="439.0" layoutY="326.0" text="Creare cont nou" />
+      <Button fx:id="changeAuthButton" layoutX="456.0" layoutY="350.0" mnemonicParsing="false" text="Sign Up" />
+      <Label fx:id="loginLabel" layoutX="274.0" layoutY="-5.0" prefHeight="62.0" prefWidth="51.0" text="LOGIN">
+      </Label>
+      <PasswordField fx:id="confirmaParolaField" layoutX="203.0" layoutY="258.0" prefHeight="43.0" prefWidth="258.0" />
+      <Label fx:id="confirmaParolaLabel" layoutX="91.0" layoutY="272.0" prefHeight="16.0" prefWidth="107.0" text="Confirma parola" />
+   </children>
+</AnchorPane>

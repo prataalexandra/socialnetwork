@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="570.0" prefWidth="737.0" spacing="20.0" styleClass="vbox" stylesheets="@../../views/css/styles.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.socialnetworkgui.controller.UserController">
+    <stylesheets>
+        <URL value="@../../views/css/styles.css" />
+    </stylesheets>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <AnchorPane prefHeight="54.0" prefWidth="614.0">
+         <children>
+            <Button layoutX="602.0" layoutY="9.0" mnemonicParsing="false" onAction="#handleLogOut" prefHeight="36.0" prefWidth="89.0" styleClass="button" text="Log out" />
+             <Button layoutX="14.0" layoutY="9.0" mnemonicParsing="false" onAction="#handleFriendshipsUser" prefHeight="36.0" prefWidth="179.0" styleClass="button" text="Manage friendships" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tableView" prefHeight="317.0" prefWidth="614.0" styleClass="table-view">
+        <columns>
+            <TableColumn fx:id="idColumn" text="ID" />
+          <TableColumn fx:id="lastNameColumn" prefWidth="307.3999824523926" text="Last Name" />
+          <TableColumn fx:id="firstNameColumn" minWidth="0.0" prefWidth="307.0000305175781" text="First Name" />
+        </columns>
+          <columnResizePolicy>
+              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+          </columnResizePolicy>
+      </TableView>
+      <AnchorPane prefHeight="0.0" prefWidth="614.0">
+         <children>
+            <Button layoutX="4.0" layoutY="6.0" mnemonicParsing="false" onAction="#handleUpdateUser" prefHeight="36.0" prefWidth="139.0" styleClass="button" text="Edit Profile" />
+            <Button layoutY="50.0" mnemonicParsing="false" onAction="#handleDeleteUser" prefHeight="36.0" prefWidth="147.0" styleClass="button" text="Delete account" />
+            <Button fx:id="previousButton" layoutX="508.0" layoutY="6.0" mnemonicParsing="false" onAction="#goToPreviousPage" styleClass="button" text="Previous" />
+            <Button fx:id="nextButton" layoutX="608.0" layoutY="6.0" mnemonicParsing="false" onAction="#goToNextPage" prefHeight="36.0" prefWidth="89.0" styleClass="button" text="Next" />
+            <TextField fx:id="recordsPerPage" layoutX="247.0" layoutY="5.0" onAction="#handleChangeNumberOfRecords" prefHeight="38.0" prefWidth="213.0" promptText="Number of records per page" styleClass="text-field" />
+         </children></AnchorPane>
+   </children>
+</VBox>
