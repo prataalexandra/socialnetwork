@@ -1,0 +1,5 @@
+![LogIn](https://github.com/prataalexandra/socialnetwork/assets/161611731/0299f4c5-9e47-447e-91ce-949265c69b73)
+![signUP](https://github.com/prataalexandra/socialnetwork/assets/161611731/743cebb8-2c27-4f6b-a190-56e4204af950)
+![homePage](https://github.com/prataalexandra/socialnetwork/assets/161611731/534c6f79-e43d-43b6-ba9a-a7b7d79d6864)
+![updateUser](https://github.com/prataalexandra/socialnetwork/assets/161611731/7b81268f-2c8f-4bbf-89ea-f27cc555498b)
+![friendships](https://github.com/prataalexandra/socialnetwork/assets/161611731/5f1b66fb-dfa9-4a39-8c66-a2b0b477795a)
