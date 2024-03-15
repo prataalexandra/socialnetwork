@@ -1,7 +1,7 @@
-Social Network Prototype
 Welcome to the Social Network Prototype, a Java application that simulates the functionalities of a social networking platform. This project provides a prototype for users to create accounts, connect with friends, exchange messages, update profiles, and manage friend requests. The application is built using JavaFX for the user interface, SQL Server for data persistence, and CSS for styling.
 
-Features
+Features:
+
 Account Management: Users can create new accounts or log in with existing credentials.
 Friendship System: Users can add friends, view their friend list, and send/accept friend requests.
 Messaging System: Real-time messaging functionality allows users to communicate with their friends.
